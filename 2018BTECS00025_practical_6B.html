@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MH-CET registration 2021</title>
+	<style>
+		fieldset {
+		  background-color: azure;
+		}
+
+		legend {
+		  background-color: crimson;
+		  color: white;
+		  padding: 5px 10px;
+		}
+
+		input {
+		  margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1 align="center">MH-CET Registration 2021</h1>
+		<fieldset>
+			<legend>Student Information</legend>
+			<table>
+				<tr>
+					<td>
+						<label> First Name:</label>
+					</td>
+					<td>
+						<input type="text" name="nm" placeholder="Enter your First name">
+					</td>
+				
+					<td>
+						<label>  Middle Name:</label>
+					</td>
+					<td>
+						<input type="text" name="nm" placeholder="Enter your Middle name">
+					</td>
+			
+					<td>
+						<label> Last Name:</label>
+					</td>
+					<td>
+						<input type="text" name="nm" placeholder="Enter your Last name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label> Parent’s Name:</label>
+					</td>
+					<td>
+						<input type="text" name="nm" placeholder="Enter your Parent’s Name">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>  Email-ID:</label>
+					</td>
+					<td>
+						<input type="text" name="nm" placeholder="Enter your Email-ID ">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label> ID proof:</label>
+					</td>
+					<td>
+						<select name="id" required>
+					          <option value="aadhar" selected>Aadhar card</option>
+					          <option value="pan">PanCard</option>
+					          <option value="voter id">Voter ID</option>
+					          <option value="Driving licence">Driving licence</option>
+					    </select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="add">Address: </label>
+					</td>
+					<td>
+        				<textarea cols="30" rows="5" required></textarea>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+	        <legend>Educational Information:</legend>
+	        <table>
+	        	<tr>
+	        		<td><label for="quali">Qualification: </label></td>
+	        		<td>
+	        		<select name="quali" size="1" required multiple>
+	        		  <option value="hsc">HSC</option>
+			          <option value="Diploma">Diploma</option>
+			          <option value="btech">B.Tech</option>
+			          <option value="bsc">BSC</option>
+			        </select>
+			        </td>
+			     </tr>
+			     <tr>
+			     	<td><label for="branch">Branch: </label></td>
+			     	<td>
+			     		<select name="branch" size="3" required>
+					          <option value="art">Art</option>
+					          <option value="sci">Science</option>
+					          <option value="com">Commerce</option>
+					    </select>
+
+			     	</td>
+			     </tr>
+			     <tr>
+			     	<td><label for="Uni">University:</label></td>
+			     	<td>
+			     		<input list="uni" name="uni" required />
+				        <datalist id="uni">
+				          <option value="Shivaji University"></option>
+				          <option value="Pune University"></option>
+				          <option value="Mumbai University"></option>
+				      </datalist>
+			     	</td>
+			     </tr>
+			     <tr>
+			     	<td><label for="clg">College :</label></td>
+			     	<td>
+			     		<input list="clg" name="clg" required />
+				        <datalist id="clg">
+				          <option value="Walchand College Of Engineering,Sangli"></option>
+				          <option value="College of Engineering,Pune"></option>
+				          <option value="Veermata Jijabai Technological Institute, Mumbai"></option>
+				      </datalist>
+			     	</td>
+			     </tr>
+			     <tr>
+			     	<td><label >Enter exam seat Number: </label></td>
+			     	<td>
+			     		<input type="number" placeholder="exam seat number" required />
+			     	</td>
+			     </tr>
+	        </table> 
+      </fieldset>
+
+      <fieldset>
+      	<legend>Exam Preference</legend>
+      	<table>
+      		<tr>
+      			<td><label for="branch"> MH-CET Exam Paper Branch: </label></td>
+      			<td>
+      				<select name="branch" size="2" required multiple>
+      					<option>Bachelor in Engineering/Technology (B.E/B.Tech)/ Bachelor in Pharmacy (B.Pharm/Pharm.D),
+								Agriculture & Allied Courses/
+								Fisheries Science/ Dairy
+								Technology
+						</option>
+						<option>
+							Master In Computer Applications
+						</option>
+						<option>
+							Master of Architecture
+						</option>
+					</select>
+      			</td>
+      		</tr>
+      		<tr>
+      			<td><label for="City">Enter centers for exam: </label></td>
+      			<td>
+			        <select name="city" size="5" required>
+			          <optgroup label="Pune">
+			            <option value="pune">Pune</option>
+			            <option value="Satara">Satara</option>
+			            <option value="Sangli">Sangli</option>
+			            <option value="Kolhapur">Kolhapur</option>
+			          </optgroup>
+			          <optgroup label="Mumbai">
+			          	<option value="	Navi Mumbai">Navi Mumbai</option>
+			            <option value="Thane">Thane</option>
+			            <option value="West	Mumbai ">West Mumbai </option>
+			            <option value="	Raigad">Raigad</option>
+			          </optgroup>
+			          <optgroup label="Nagpur">
+			          	<option value="Wardha">Wardha</option>
+			          	<option value="Nagpur">Nagpur </option>
+			          	<option value="Bhandara"> Bhandara </option>
+			          </optgroup>
+			        </select>
+			     </td>
+	      	</tr>
+      	</table>
+      </fieldset>
+      <table align="center" bgcolor="grey">
+      	<tr>
+      		<td>
+      			<button type="submit" onclick="alert('Successfully Submitted')">Submit</button>
+      		</td>
+      		<td>
+      			<button type="reset" onclick="alert('Reset')">Reset</button>
+      		</td>
+      	</tr>
+      </table>
+	</form>
+</body>
+</html>
