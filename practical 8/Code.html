@@ -1,0 +1,112 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <title>CODE</title>  
+        <!-- external style sheet -->
+        <link rel="stylesheet" type="text/css" href="code.css">
+
+        <!--internal(embedded ) styles -->
+        <style type="text/css" >
+            #div1{
+                font-size: 18px;
+                font-style: italic;
+                text-align: left;
+            }
+        </style>
+
+    </head>  
+    <body>  
+        <header>
+            <!--inline styles css-->
+            <h1 style="text-align: center;">C PROGRAMS</h1>
+        </header>  
+        <hr>
+        <div>
+            <div id="div1">
+                <h2>PROBLEM STATEMENT</h2>
+                <h3>
+                    Write a program in any language to read 10 numbers from keyboard and find their sum and average.
+                </h3>
+                <h4>C Code:</h4>
+                <pre>
+                    <code>
+                        #include <stdio.h>
+                        void main()
+                        {       
+                            int i,n,sum=0;
+                            float avg;
+                            printf("Input the 10 numbers : \n");
+                            for (i=1;i<=10;i++)
+                            {
+                                        printf("Number-%d :",i);
+
+                                scanf("%d",&n);
+                                sum +=n;
+                            }
+                            avg=sum/10.0;
+                            printf("The sum of 10 no is : %d\nThe Average is : %f\n",sum,avg);
+                         
+                        }
+                    </code>
+                </pre>
+            </div>
+            <hr>
+            <div class="div2">
+                <h4>Sample Input & Output</h4>
+                <p> 
+                    Input the 10 numbers : <br>                                                                                       
+                        Number-1 :<kbd>1</kbd> <br>                                                                                        
+                        Number-2 :<kbd>2</kbd> <br>                                                                             
+                        Number-3 :<kbd>3</kbd>  <br>
+                        Number-4 :<kbd>4 </kbd> <br>                                                                                       Number-5 :<kbd>5 </kbd>  <br>
+                        Number-6 :<kbd>6</kbd>  <br>
+                        Number-7 :<kbd>7</kbd>  <br>
+                        Number-8 :<kbd>8</kbd> <br>                                                                            
+                        Number-9 :<kbd>9</kbd> <br>                                                                            
+                        Number-10 :<kbd>10</kbd> <br>                                                                        
+                        The sum of 10 no is :<samp>55</samp>  <br>                                              
+                        The Average is :<samp> 5.500000 </samp><br>
+                </p>
+            </div>
+            <hr>
+            <div class="div2">
+                <h4>Variable used</h4>
+                <p>
+                    The variables used in this program are:
+                    <br>
+                    int variables: <var>i</var>, <var>n</var> ,  <var>sum</var>
+                    <br>
+                    float variables:  <var>avg</var>
+                    <br>
+                </p>
+            </div>
+            <hr>
+            <div>
+                <h3>Complexity</h3>
+                <p>
+                    Complexity for this program is: O(n)
+                </p>
+            </div>
+            <hr>
+            <div id="lastdiv">
+                <p>
+                    Refer link for algorithm:<a href="https://www.w3resource.com/c-programming-exercises/for-loop/c-for-loop-exercises-4.php">Algorithm</a>
+                </p>
+                <hr>
+                <p>
+                    <small>Sorting algorithms:</small>
+                    <br>
+                    1.Selection sort:  Complexity is O(n<sup>2</sup>)
+                    <br>
+                    2.Merge Sort: complexity is O(nlog<sub>2</sub>n)
+                    <br><s>complexity is O(n)</s>
+                </p>
+            </div>
+            <hr>
+        </div>
+
+        <footer style="text-align: center;">
+            <p><small>Code is taken from another website</small></p>
+        </footer>
+    </body>  
+</html>

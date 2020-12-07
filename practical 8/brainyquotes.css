@@ -1,0 +1,27 @@
+body{
+	background-color: azure;
+	margin: 5px;
+	padding: 10px;
+	border-width: 8px;
+	border-style:  double; ;
+	border-color: navy;
+	border-radius: 10px;
+}
+header{
+	color: rgb(255,255,255);
+	padding: 5px;
+}
+.div2{
+	font-size: 17px;
+    font-style: normal;
+    text-align: center;
+    color: #800000;
+}
+blockquote{
+	background-color: orange;
+	color: rgb(0,0,255);
+	border-width: 8px;
+	border-style:  dotted; ;
+	border-color: red;
+	border-radius: 5px;
+}
