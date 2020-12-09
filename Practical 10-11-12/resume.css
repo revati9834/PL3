@@ -1,0 +1,74 @@
+*{
+	font-family: sans-serif ;
+	color: white;	
+	margin: 0;
+	padding: 0;
+
+}
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(paris.jpg);
+	background-size: cover;
+	background-position: center ;
+	height: 300vh;
+	background-attachment: fixed;
+}
+.resume {
+	position: absolute;
+	top:20%;
+	left:20%;
+	right: 20%;
+	padding: 8px;
+	border-width: 8px;
+	border-color: white;
+	border-style: double;
+}
+.resume{
+	font-weight: bold;
+	background-color: grey;
+}
+.data{
+	margin-left: 20%;
+}
+table{
+	background-color: azure;
+	
+}
+table,th,td{
+			border: thin solid navy ;
+			/*border-collapse: collapse;*/
+			color: navy;
+		}
+th,td{
+			padding: 10px;
+		}
+.header ul{
+	float: right;
+	margin-top: 20px;
+}
+.header ul li {
+	display: inline-block;
+}
+.header ul li a{
+	border: 1px solid transparent;
+	text-decoration: none;
+	
+	padding:5px 20px;
+	transition: 0.6s ease;
+	border-radius: 5px;
+}
+
+.header ul li a:hover
+{
+	background-color: blue;
+	color:white;
+}
+
+.header{
+	max-width: 1200px;
+	margin:auto;
+}
+.header h1{
+	text-shadow:4px 4px 6px purple;
+
+}
